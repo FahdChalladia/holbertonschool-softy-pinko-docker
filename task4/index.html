@@ -1,0 +1,16 @@
+<h1 id="dynamic-content"></h1>
+<h1>We provide the best <strong>strategy</strong><br>to grow up your<strong>business</strong></h1>
+<a href="#features" class="main-button-slider">Discover More</a>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(function() {
+        $.ajax({
+            type: "GET",
+            url: "http://localhost:5252/api/hello",
+            success: function(data) {
+                $('#dynamic-content').text(data);
+            }
+        });
+    });
+</script>
